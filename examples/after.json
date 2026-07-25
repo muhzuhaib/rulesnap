@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "repository": "octo/demo",
+  "rulesets": [
+    {
+      "id": 7,
+      "source": "octo/demo",
+      "name": "main protection",
+      "enforcement": "evaluate",
+      "conditions": {"ref_name": {"include": ["~ALL"], "exclude": []}},
+      "rules": [],
+      "bypass_actors": [{"actor_id": 1, "actor_type": "User", "bypass_mode": "always"}]
+    }
+  ]
+}

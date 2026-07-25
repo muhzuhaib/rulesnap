@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "repository": "octo/demo",
+  "rulesets": [
+    {
+      "id": 7,
+      "source": "octo/demo",
+      "name": "main protection",
+      "enforcement": "active",
+      "conditions": {"ref_name": {"include": ["refs/heads/main"], "exclude": []}},
+      "rules": [{"type": "pull_request"}],
+      "bypass_actors": []
+    }
+  ]
+}
